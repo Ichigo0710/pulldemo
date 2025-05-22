@@ -1,1 +1,12 @@
-
+- name: First Demo Pull 
+  hosts: localhost
+  tasks: 
+      - name: print hello world
+        debug: 
+            msg: "hello world"
+      - name: print hosts name
+        debug: 
+            var: ansible_host name
+      - name: print Ubuntu version
+        debug: 
+            var: ansible_distribution
